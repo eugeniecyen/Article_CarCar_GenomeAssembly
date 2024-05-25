@@ -1,2 +1,3 @@
 # Article_CarCar_GenomeAssembly
-Loggerhead sea turtle (Caretta caretta) assembly, annotation and related analyses
+
+This repository contains scripts and data used for de novo genome assembly, annotation and related analyses for a loggerhead sea turtle (Caretta caretta) nesting female from Sal Island, Cabo Verde
