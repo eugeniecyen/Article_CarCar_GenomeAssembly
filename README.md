@@ -1,5 +1,3 @@
-# Article_CarCar_GenomeAssembly
-
 ## Summary
 
 This repository contains scripts and data used for the research article: 
