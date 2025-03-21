@@ -1,16 +1,17 @@
 #!/bin/bash
 #$ -cwd
 #$ -j y
+#$ -m bea 
 #$ -pe smp 1
-#$ -m bea  
-#$ -l h_rt=240:0:0
 #$ -l h_vmem=45G
+#$ -l h_rt=240:0:0
+#$ -t 1-2418
 
 #######################################################################
 
 # Created by: Charley, 2021
-# Prepare raw ONT reads by trimming residual adapters using PoreChop,
-# then filter by quality using NanoFilt
+# Array per fastq file preparing raw ONT reads by trimming residual adapters 
+# via PoreChop, then filtering by quality with NanoFilt
 
 #######################################################################
 
@@ -40,11 +41,8 @@ deactivate
 # Set up environment
 source /data/SBCS-EizaguirreLab/Charley/environments/nanopack_env/bin/activate
 
-DATA_DIR=/data/SBCS-EizaguirreLab/Turtle_Genome/02_Quality_Control/04_Trimmed_Reads/01_PoreChop
-OUT_DIR=/data/SBCS-EizaguirreLab/Turtle_Genome/02_Quality_Control/04_Trimmed_Reads/02_NanoFilt
-
 # Run NanoFilt
 # NB. NanoFilt does not provide options for input or output files → use cat or redirect operators
-gunzip -c $DATA_DIR/combined_porechop_PAF34142_pass_a5072ac4.fastq.gz | \
+gunzip -c $OUT_DIR/"porechop_${query_file:71}" | \
 NanoFilt -l 500 -q 8 | \
-gzip > $OUT_DIR/nanofilt_q8minlen500_porechop.fastq.gz
+gzip > $OUT_DIR/"porechop_pass_${query_file:71}"
