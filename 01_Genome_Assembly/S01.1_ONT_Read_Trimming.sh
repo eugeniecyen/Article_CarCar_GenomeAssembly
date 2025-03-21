@@ -46,3 +46,6 @@ source /data/SBCS-EizaguirreLab/Charley/environments/nanopack_env/bin/activate
 gunzip -c $OUT_DIR/"porechop_${query_file:71}" | \
 NanoFilt -l 500 -q 8 | \
 gzip > $OUT_DIR/"porechop_pass_${query_file:71}"
+
+# After array finished and QC, all fastq files were combined into a single file 
+# 'turtle_porechop_q8minlen500.fastq.gz' using the cat command 
