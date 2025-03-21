@@ -41,7 +41,7 @@ done
 echo "Finished: "`date`
 
 # Index BAMs
-for i in *.bam
+for i in *_flye_medaka_pilon.sort.bam
 do
    samtools index $i > "${i}.bai"
 done
@@ -52,10 +52,15 @@ done
 module unload bwa
 module load java/11.0.2
 
+# Create list of input bam parameters
+INPUT_PARAMS=""
+for i in $BAM_DIR/*_flye_medaka_pilon.sort.bam; do
+    INPUT_PARAMS+="I=$i "
+done
+
 # Run Picard MarkDuplicates 
 java -jar $PICARD MarkDuplicates \
-I=$BAM_DIR/SL_063_H7L77DSX2_flye_medaka_pilon.sort.bam \
-I=$BAM_DIR/SL_063_H7LJYDSX2_flye_medaka_pilon.sort.bam \
+$INPUT_PARAMS \
 O=$DEDUP_DIR/SL_063_flye_medaka_pilonx2.sort.dedup.bam \
 M=$DEDUP_DIR/SL_063_flye_medaka_pilonx2.marked_dup_metrics.txt \
 ASO=coordinate
