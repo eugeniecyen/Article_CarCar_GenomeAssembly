@@ -2,7 +2,7 @@
 
 ########################################################################################################################################
 
-# Created by Alice Balard, 2023 (updated in 2025)
+# Created by Alice Balard, 2023; updated in 2025 (https://github.com/alicebalard)
 # Generate ONT methylation call stats and merge 5mC/5hmC sites, since WGBS cannot distinguish between them
 
 ########################################################################################################################################
