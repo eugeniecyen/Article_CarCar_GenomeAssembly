@@ -9,7 +9,7 @@
 
 # Created by: Charley, Jun 2023, following workflow in Bentley et al. (2023) PNAS
 # Calculate genome-wide heterozygosity for reference individual (SLK063)
-# Compute heterozygosity in an array by chromosome (100kb windows, 20kb steps)
+# Compute heterozygosity in 100kb windows and 20kb steps
 
 #######################################################################
 
@@ -20,11 +20,6 @@ GENOMICS_GENERAL_DIR=/data/SBCS-EizaguirreLab/Charley/scripts/genomics_general
 VCF_DIR=/data/scratch/btx902/Heterozygosity/Vcfs
 GENO_DIR=/data/scratch/btx902/Heterozygosity/Het_Calculation/Simon_Martin_Het/Genos
 HET_DIR=/data/scratch/btx902/Heterozygosity/Het_Calculation/Simon_Martin_Het/Het_Windows
-
-### Extract chrom IDs ###
-
-Chrom_File=/data/SBCS-EizaguirreLab/Turtle_Genome/00_Final_Assemblies/chrom_names.txt
-CHROM=$(sed -n "${SGE_TASK_ID}p" $Chrom_File)
 
 ### Create geno file ###
 python $GENOMICS_GENERAL_DIR/VCF_processing/parseVCF.py \
