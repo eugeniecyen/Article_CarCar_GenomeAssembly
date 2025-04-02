@@ -9,7 +9,7 @@
 #######################################################################
 
 # Created by: Charley, 2021
-# Run RepeatModeler for genome assembly: CarCar_QM_v1_2021_12_Scaff.fasta
+# Run RepeatModeler for genome assembly 'CarCar_QM_v1.21.'12_Sc'
 
 #######################################################################
 
