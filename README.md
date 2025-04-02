@@ -122,6 +122,7 @@ Scripts used to compute heterozygosity and % GC content for our reference assemb
 **04_TSD_Linked_Genes**
 
 01_Synteny_Analysis:
+
 Scripts used to identify TSD-linked genes in our reference assembly and the hawksbill assembly (Guo et al. 2023), based on list compiled by Bentley et al. (2023)
 * `S01_Identify_TSD_Gene_Locations.sh`: identify TSD-linked genes in our reference assembly and the hawksbill assembly
 * `R02.1_Check_TSD_Gene_Locations_CC.R`: check TSD-linked genes identified in our reference assembly
