@@ -70,6 +70,7 @@ Scripts used to produce the reference ONT methylome
 * `R01_methylStat_methylKit.R`: generate ONT methylation call stats and merge 5mC/5hmC sites, since WGBS cannot distinguish between them
 * `R02_Annotate_Gene_Assoc_ONT.R`: annotate and extract all CpGs associated with genes
 <br/><br/>
+
 **WGBS**
 
 Scripts used to process WGBS data for ten additional individuals and comparisons against the reference ONT methylome
@@ -84,6 +85,7 @@ Scripts used to process WGBS data for ten additional individuals and comparisons
 * `R02_Annotate_Gene_Assoc_WGBS.R`: annotate and extract all CpGs associated with genes
 * `R03_Compare_ONT_WGBS_Methylomes.R`: compare methyation per CpG and per gene by feature type between the ONT reference methylome 10 additional WGBS methylomes
 <br/><br/>
+
 #### 04_Additional_Analyses
 
 **01_Whole_Genome_Alignment**
@@ -91,6 +93,7 @@ Scripts used to process WGBS data for ten additional individuals and comparisons
 Scripts used to generate whole genome alignments for analysing genome-wide synteny between sea turtle species
 * `Sea_Turtle_Genome_Alignment.sh`: produce minimap2 alignments of our reference assembly and chromosome-level assemblies for other sea turtle species for input into online DGENIES portal
 <br/><br/>
+
 **02_Demographic_History**
 
 Scripts used to perform PSMC analysis of our reference individual SLK063 and Brazilian individual SAMN20502673 (Vilaça et al., 2021)
@@ -102,6 +105,7 @@ Scripts used to perform PSMC analysis of our reference individual SLK063 and Bra
 * `S03_Run_PSMC_SAMN20502673.sh`: run PSMC for SAMN20502673
 * `S04_PSMC_Multiline_Plot.sh`: output multi-line PSMC plot and text file
 <br/><br/>
+
 **03_Genome_Properties**
 
 Scripts used to compute heterozygosity and % GC content for our reference assembly
