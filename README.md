@@ -57,6 +57,7 @@ Scripts used for repeat identification and genome annotation
 
 #### 03_Methylome
 **ONT**
+
 Scripts used to produce the reference ONT methylome
 
 01_Bash_Scripts:
@@ -70,6 +71,7 @@ Scripts used to produce the reference ONT methylome
 * `R02_Annotate_Gene_Assoc_ONT.R`: annotate and extract all CpGs associated with genes
 
 **WGBS**
+
 Scripts used to process WGBS data for ten additional individuals and comparisons against the reference ONT methylome
 
 01_Bash_Scripts:
@@ -85,10 +87,12 @@ Scripts used to process WGBS data for ten additional individuals and comparisons
 #### 04_Additional_Analyses
 
 **01_Whole_Genome_Alignment**
+
 Scripts used to generate whole genome alignments for analysing genome-wide synteny between sea turtle species
 * `Sea_Turtle_Genome_Alignment.sh`: produce minimap2 alignments of our reference assembly and chromosome-level assemblies for other sea turtle species for input into online DGENIES portal
 
 **02_Demographic_History**
+
 Scripts used to perform PSMC analysis of our reference individual SLK063 and Brazilian individual SAMN20502673 (Vilaça et al., 2021)
 * `S01a_Prep_Bam_SLK063.sh`: prep analysis-ready BAM files from raw Illumina reads for reference individual SLK063
 * `S01b_Prep_Bam_SAMN20502673.sh`: prep analysis-ready BAM files from raw Illumina reads for individual SAMN20502673
@@ -99,6 +103,7 @@ Scripts used to perform PSMC analysis of our reference individual SLK063 and Bra
 * `S04_PSMC_Multiline_Plot.sh`: output multi-line PSMC plot and text file
 
 **03_Genome_Properties**
+
 Scripts used to compute heterozygosity and % GC content for our reference assembly
 
 01_Heterozygosity:
@@ -118,7 +123,8 @@ Scripts used to identify TSD-linked genes in our reference assembly and the hawk
 * `R02.2_Check_TSD_Gene_Locations_EI.R`: check TSD-linked genes identified in the hawksbill assembly
 * `R03_Plot_TSD_Gene_Locations.R`: plot the chromosomal positions of TSD-linked genes between sea turtle species with circos
 
-**02_Methylation_Analysis: **
+**02_Methylation_Analysis:**
+
 Scripts used to compare methylation 
 * `S01_Run_Orthofinder.sh`: identify single-copy homologues between the loggerhead, green, leatherback and hawksbill sea turtle species with OrthoFinder
 * `Compare_Meth_TSD_vs_Ortho_Genes.R`: compare methylation across gene feature types between TSD-linked versus orthogroup genes in the reference ONT methylome
