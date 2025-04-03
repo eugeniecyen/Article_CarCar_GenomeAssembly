@@ -47,9 +47,9 @@ Scripts used for repeat identification and genome annotation
 * `S03.1_Run_BRAKER1.sh`: perform gene prediction using RNA-Seq hints with BRAKER1
 * `S04.1_PASA_Load_Mikado_Loci.sh`: load Mikado loci into a PASA database
 * `S04.2_PASA_Load_Augustus_Loci.sh`: update PASA database with Augustus loci
-* `S04.3_PASA_Annot_Compare_Round1.sh`: round 1 of PASA annotation comparison and updates to incorporate transcript alignnments into gene structures
-* `S04.4_PASA_Annot_Compare_Round2.sh`: round 2 of PASA annotation comparison and updates to incorporate transcript alignnments into gene structures
-* `S04.5_PASA_Annot_Compare_Round3.sh`: round 3 of PASA annotation comparison and updates to incorporate transcript alignnments into gene structures
+* `S04.3_PASA_Annot_Compare_Round1.sh`: round 1 of PASA annotation comparison and updates to incorporate transcript alignments into gene structures
+* `S04.4_PASA_Annot_Compare_Round2.sh`: round 2 of PASA annotation comparison and updates to incorporate transcript alignments into gene structures
+* `S04.5_PASA_Annot_Compare_Round3.sh`: round 3 of PASA annotation comparison and updates to incorporate transcript alignments into gene structures
 * `S04.6_Clean_Annot.sh`: clean up annotation with AGAT
 * `S04.7_Rename_ENSEMBL.sh`: rename genes in ENSEMBL format with prefix "CarCarScaff"
 * `S05.1_SwissProt_Prot_Homology.sh`: assign functional annotation to genes via homology against the SwissProt database
